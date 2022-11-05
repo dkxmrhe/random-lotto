@@ -1,4 +1,4 @@
-const createLotto = (deleteNum: string[], AddNum: string[]) => {
+const createLotto = ( addNum: string[], deleteNum: string[]) => {
     let totalNum: string[] = []; //1~45 로또 번호 배열
     let totLen: number = totalNum.length; //삭제된 배열 길이
 
@@ -12,14 +12,14 @@ const createLotto = (deleteNum: string[], AddNum: string[]) => {
         }
     }
 
-    while(AddNum.length < 6) {
+    while(addNum.length < 6) {
         let ran: string = totalNum[parseInt((Math.random()*totLen).toString())];
-        if(AddNum.indexOf(ran) == -1) {
-            AddNum.push(ran);
+        if(addNum.indexOf(ran) == -1) {
+            addNum.push(ran);
         }
     }
 
-    return AddNum;
+    return addNum;
 }
 
 export default createLotto;

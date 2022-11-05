@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
-import Lotto from './components/lotto';
+import Lotto from './components/lotto/lotto';
 import NumAnal from './components/numAnal';
 import YearLotto from './components/yearLotto';
 import './App.css';
