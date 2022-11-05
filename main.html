@@ -8,7 +8,12 @@
 </head>
 <body>
     <div>로또 추첨기</div>
-    <button onclick="lotto()">추첨 받기</button>
+    <form method="post">
+        1<input type="radio" value="1"/>
+        2<input type="radio" value="2"/>
+        3<input type="radio" value="3"/>
+        <button onclick="lotto()">추첨 받기</button>    
+    </form>
     <script>
         function lotto() {
             let base = []; //로또 1~45번호 배열
