@@ -11,20 +11,20 @@ export default class App extends Component {
       <Router>
         <header>
           <div className='logo'>
+            <Link to="/">
+              메인페이지 추후 이미지
+            </Link>
+          </div>
+          <div className='menu'>
+            <div className='menuBar'>
               <Link to="/">
-                메인페이지
+                로또 추첨번호
               </Link>
-            </div>
-            <div className='menu'>
-              <div className='menuBar'>
-                <Link to="/">
-                  <div>로또 추첨번호</div>
-                </Link>
-                <Link to="/numanal">
-                  <div>번호별 확률</div>
+              <Link to="/numanal">
+                  번호별 확률
                 </Link>
                 <Link to="/yearlotto">
-                  <div>연금복권 추첨번호</div>
+                  연금복권 추첨번호
                 </Link>
               </div>
             </div>
