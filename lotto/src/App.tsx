@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
 import Lotto from './components/lotto';
 import NumAnal from './components/numAnal';
 import YearLotto from './components/yearLotto';
 import './App.css';
 
-export default class App extends React.Component {
+export default class App extends Component {
   render() {
     return (
       <Router>
@@ -18,13 +18,13 @@ export default class App extends React.Component {
             <div className='menu'>
               <div className='menuBar'>
                 <Link to="/">
-                  <button>로또 추첨번호</button>
+                  <div>로또 추첨번호</div>
                 </Link>
-                <Link to="/calorie">
-                  <button>번호별 확률</button>
+                <Link to="/numanal">
+                  <div>번호별 확률</div>
                 </Link>
-                <Link to="/tandanji">
-                  <button>연금복권 추첨번호</button>
+                <Link to="/yearlotto">
+                  <div>연금복권 추첨번호</div>
                 </Link>
               </div>
             </div>
@@ -40,8 +40,8 @@ export default class App extends React.Component {
               <div className='mainCenter'>
                 <Routes>
                   <Route path="/" element={<Lotto/>} />
-                  <Route path="/calorie" element={<NumAnal/>} />
-                  <Route path="/tandanji" element={<YearLotto/>} />
+                  <Route path="/numanal" element={<NumAnal/>} />
+                  <Route path="/yearlotto" element={<YearLotto/>} />
                 </Routes>
               </div>
               <div className='bottomCenter'>
