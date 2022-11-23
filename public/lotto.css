@@ -1,0 +1,110 @@
+.center .mainContent .lotto {
+  display: flex;
+  flex-direction: column;
+}
+.center .mainContent .lotto .lottoNumAndResult {
+  display: flex;
+  justify-content: center;
+}
+
+.center .mainContent .lotto .output {
+  margin-top: 15px;
+  margin-left: 45%;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color: pink;
+}
+
+.center .mainContent .lotto .lottoNumAndResult .lottoNum {
+  width: 400px;
+  height: 300px;
+  margin-top: 20px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 10px;
+}
+.center .mainContent .lotto .lottoNumAndResult .lottoNum .lottoNumSubject {
+  width: 100%;
+  height: 30px;
+  background-color: rgb(216, 215, 215);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+}
+
+.center .mainContent .lotto .lottoNumAndResult .lottoNum .number {
+  display: flex;
+  flex-wrap: wrap;
+}
+.center .mainContent .lotto .lottoNumAndResult .lottoNum .number .numberLay {
+  width: 50px;
+  height: 40px;
+  text-align: center;
+}
+
+.center .mainContent .lotto .lottoNumAndResult .result {
+  width: 400px;
+  height: 300px;
+  margin-top: 20px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.center .mainContent .lotto .lottoNumAndResult .result .resultSubject {
+  background-color: rgb(216, 215, 215);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+}
+
+.center .mainContent .lotto .lottoNumAndResult .result .Allball {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 380px;
+  height: 250px;
+}
+
+.center .mainContent .lotto .lottoNumAndResult .result .Allball .ball {
+  color: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  border-radius: 100px;
+  font-weight: bold;
+}
+
+.center .mainContent .lotto .currentLotto {
+  width: 800px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+.center .mainContent .lotto .currentLotto table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.center .mainContent .lotto .currentLotto caption {
+  border-top: 1px solid blue;
+  border-left: 1px solid blue;
+  border-right: 1px solid blue;
+  background-color: blue;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+}

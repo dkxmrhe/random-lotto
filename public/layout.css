@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  background-color: rgba(217, 224, 196, 0.205);
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(59, 58, 58);
+}
+
+header .topHeader {
+  width: 100%;
+  height: 70px;
+  background-color: white;
+}
+
+header .topHeader .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .topHeader .logo a {
+  color: black;
+  text-decoration: none;
+}
+
+header .topHeader .logo a img {
+  margin-top: 10px;
+  width: 250px;
+  height: 50px;
+}
+
+header .bottomHeader {
+  width: 60%;
+  margin-left: 20%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .bottomHeader li {
+  list-style: none;
+}
+
+header .bottomHeader li a {
+  text-decoration: none;
+  color: white;
+}
+
+section {
+  margin-top: 10px;
+  display: flex;
+}
+
+section .left {
+  width: 250px;
+  height: 1000px;
+}
+
+section .center {
+  width: 900px;
+  height: 800px;
+}
+
+section .center .topCenter {
+  width: 100%;
+  height: 200px;
+}
+section .center .mainContent {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(217, 224, 196, 0.205);
+}
+
+section .right {
+  width: 250px;
+  height: 1000px;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+}

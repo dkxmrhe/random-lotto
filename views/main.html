@@ -1,0 +1,61 @@
+{% extends "layout.html" %} {% block main %}
+<div class="lotto">
+  <div class="lottoNumAndResult">
+    <div class="lottoNum">
+      <div class="lottoNumSubject">로또 번호 제외</div>
+      <div class="number">
+        {% for i in lottoNum %}
+        <div class="numberLay">
+          {{i}}<br /><input
+            type="checkbox"
+            value="{{i}}"
+            class="lotNumber"
+          /><br />
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="result">
+      <div class="resultSubject">로또 추첨</div>
+      <div class="Allball">
+        <div class="ball" id="numBall1"></div>
+        <div class="ball" id="numBall2"></div>
+        <div class="ball" id="numBall3"></div>
+        <div class="ball" id="numBall4"></div>
+        <div class="ball" id="numBall5"></div>
+        <div class="ball" id="numBall6"></div>
+      </div>
+    </div>
+  </div>
+  <button onclick="lotto()" class="output">추첨 받기</button>
+  <div class="currentLotto">
+    <table>
+      <caption>
+        최근 5주간 당첨 번호
+      </caption>
+      <tr>
+        <th>회차</th>
+        <th>첫 번째 번호</th>
+        <th>두 번째 번호</th>
+        <th>세 번째 번호</th>
+        <th>네 번째 번호</th>
+        <th>다섯 번째 번호</th>
+        <th>여섯 번째 번호</th>
+        <th>보너스 번호</th>
+      </tr>
+      {% for lotto in lottos %}
+      <tr>
+        <td>{{lotto.turn}}</td>
+        <td>{{lotto.num1}}</td>
+        <td>{{lotto.num2}}</td>
+        <td>{{lotto.num3}}</td>
+        <td>{{lotto.num4}}</td>
+        <td>{{lotto.num5}}</td>
+        <td>{{lotto.num6}}</td>
+        <td>{{lotto.bonusNum}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
+{% endblock %}
